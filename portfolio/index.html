@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="assests/profile-picture.jpg" alt="Your Name">
+            </div>
+            <h1>Yugal Nyoupane</h1>
+            <p>Web Developer 
+                </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Passionate about coding and innovation, always eager to learn and take on new challenges in the world
+                of technology.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project">
+                <h3><i>iFunds</i>-Digital Wallet</h3>
+                <p>A digital Wallet which has capability of transaction, money exchange, face authentication for verification and many more.</p>
+                <p>Technologies used: C++, MySql</p>
+                <a href="https://github.com/yugalnyoupane/ifunds" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Wikipedia</h3>
+                <p>Contains a functionality to add , edit , update your page and also search the page. </p>
+                <p>Technologies used: Python, Django, HTML , CSS</p>
+                <a href="https://github.com/yugalnyoupane/Wiki-Encyclopedia" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Google Home page</h3>
+                <p>This Project contains 3 pages i.e. Google Home page, Google Images and the Advanced Search page. </p>
+                <p>Technologies used:HTML , CSS</p>
+                <a href="https://github.com/yugalnyoupane/Google-Home-Page-" target="_blank">View Project</a>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>C</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <!-- Education Item 1 -->
+            <div class="education-item">
+                <h3>SEE</h3>
+                <p>Little Stars Academy</p>
+                <p>GPA: 3.95</p>
+                <p>2075</p>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="education-item">
+                <h3>+2</h3>
+                <p>College of Central State</p>
+                <p>GPA: 3.79</p>
+                <p>2078</p>
+            </div>
+
+            
+            <div class="education-item">
+                <h3>Bachelors*</h3>
+                <p>Thapathali Engineering Campus</p>
+                <p>Bachelor in electronics, communication and information engineering*</p>
+                <p>2079-now</p>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:your-email@example.com" target="_blank">yugal.079bei048@tcioe.edu.np</a></p>
+                <p>GitHub: <a href="https://github.com/yugalnyoupane" target="_blank">yugalnyoupane</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
